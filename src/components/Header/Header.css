@@ -1,0 +1,11 @@
+.header{
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+.header h1{
+    color: rgb(255, 255, 255);
+}
+.header h2{
+    color:rgb(0, 252, 197);
+}
