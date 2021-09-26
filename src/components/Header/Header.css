@@ -9,3 +9,23 @@
 .header h2{
     color:rgb(0, 252, 197);
 }
+.manu-part{
+    padding: 2px 100px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.manu-part img{
+    width: 120px;
+    height: 30px;
+}
+.nav-item a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+    transition: all linear .3s;
+}
+.nav-item a:hover{
+    color: rgb(0, 252, 197);
+}

@@ -1,9 +1,9 @@
-# Started with DataSoft Company
-
-This project live Site: [DataSoft App](https://github.com/facebook/create-react-app).
+# Make A DataSoft Company
+**Live Site:** [DataSoft App](https://youthful-knuth-917d91.netlify.app/).
 
 ## Key point to create this project
-1.JavaScript
-2.React Libery
-3.HTML & CSS
+*JavaScript
+*React Libery
+*HTML & CSS
+
 

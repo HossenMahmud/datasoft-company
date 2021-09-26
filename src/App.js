@@ -5,7 +5,9 @@ import Header from './components/Header/Header';
 function App() {
   return (
     <div className="App">
+      {/* Navigation and Heading part */}
       <Header></Header>
+      {/* Main body part */}
       <Company></Company>
     </div>
   );

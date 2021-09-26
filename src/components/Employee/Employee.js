@@ -4,7 +4,9 @@ import { faUser, faCheckSquare } from '@fortawesome/free-solid-svg-icons'
 import './Employee.css';
 
 const Employee = (props) => {
+    // Bbject destructuring from Employee
     const { name, age, image, salary, job, gender, isadded } = props.employee;
+    // Font-Awesome Icon
     const addListIcon = <FontAwesomeIcon icon={faUser} />
     const StayIcon = <FontAwesomeIcon icon={faCheckSquare} />
     return (
@@ -17,6 +19,7 @@ const Employee = (props) => {
             <h5>Age: {age}</h5>
             <h5>Gender: {gender}</h5>
             <h5>Salary: ${salary}</h5>
+            {/* Using Trynary Operator for Button */}
             {
                 isadded ? <button className='add-btn-submited'>{StayIcon} Already Added</button> : <button onClick={() => props.handleAddToList(props.employee)} className='add-btn'>{addListIcon} Add To List</button>
             }
