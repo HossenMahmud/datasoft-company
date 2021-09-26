@@ -1,23 +1,25 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faCheckSquare } from '@fortawesome/free-solid-svg-icons'
 import './Employee.css';
 
 const Employee = (props) => {
-    //console.log(props.employee);
-    const { name, age, image, salary, job, gender } = props.employee;
-    const element = <FontAwesomeIcon icon={faUser} />
+    const { name, age, image, salary, job, gender, isadded } = props.employee;
+    const addListIcon = <FontAwesomeIcon icon={faUser} />
+    const StayIcon = <FontAwesomeIcon icon={faCheckSquare} />
     return (
         <div className='employee-item'>
             <div className='employee-image'>
                 <img src={image} alt="" />
             </div>
-            <h3>Name: {name}</h3>
-            <h4>Designation: {job}</h4>
+            <h2>Name: {name}</h2>
+            <h3>Job: {job}</h3>
             <h5>Age: {age}</h5>
             <h5>Gender: {gender}</h5>
             <h5>Salary: ${salary}</h5>
-            <button className='add-btn'>{element}  Add To List</button>
+            {
+                isadded ? <button className='add-btn-submited'>{StayIcon} Already Added</button> : <button onClick={() => props.handleAddToList(props.employee)} className='add-btn'>{addListIcon} Add To List</button>
+            }
         </div>
     );
 };

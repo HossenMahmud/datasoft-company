@@ -5,6 +5,9 @@
     background-color: rgb(241, 255, 255);
    
 }
+.employee-item h5{
+    font-size: 18px;
+}
 .employee-image img{
     width:180px;
     height: 180px;
@@ -13,6 +16,14 @@
 .add-btn{
     padding: 6px 12px;
     background-color: rgb(0, 252, 197);
+    border:2px solid black;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.add-btn-submited{
+    padding: 6px 12px;
+    background-color:yellow;
     border:2px solid black;
     color: black;
     font-weight: bold;

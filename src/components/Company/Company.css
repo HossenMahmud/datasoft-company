@@ -1,5 +1,5 @@
 .company-container{
-    padding: 10px 50px;
+    padding: 20px 50px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     column-gap: 10px;
